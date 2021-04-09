@@ -27,7 +27,9 @@ void build_index(int samples) {
 }
 void freqs_process(float smoothing, int samples, float speed) {
     capture(samples);
+    //GPIOA->ODR |= 1 << 7;
     process(samples);
+    //GPIOA->ODR &= ~(1 << 7);
     ws8212_update();
     float noise = 20000;
     h+= speed;

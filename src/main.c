@@ -91,7 +91,7 @@ int main(void)
 
   while (1)
   {
-    freqs_process(0.4, 1024, 1);
+    freqs_process(0.75, 1024, 1);
 
   }
 }
